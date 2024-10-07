@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+*{
+	font-family: Montserrat;
+}
+body,html{
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+body{
+  display:flex;
+	background-color: #fafafa;
+}
+.login{
+	width:350px;
+	height: auto;
+	padding-bottom: 40px;
+	margin: auto;
+	border: 1px solid #e6e6e6;
+	background-color: white;
+}
+.logo{
+	width: 100%;
+	display: flex;
+	height: 150px;
+}
+.logo img{
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form{
+	width: 100%;
+	display: flex;
+}
+.form form{
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+.inputGroup{
+	width: 100%;
+	display: flex;
+	position: relative;
+	margin-top: 5px;
+}
+.form form input{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	outline: none;
+	background-color: white;
+	border: 1px solid #efefef;
+	outline: none;
+	height: 36px;
+	border-radius: 2px;
+	padding-left: 7px; 
+	padding-right: 7px; 
+	font-size: 12px;
+	font-family: Montserrat;
+}
+label{
+	position: absolute;
+	left: 12%;
+	top: 12px;
+	color: #999;
+	font-size: 12px;
+	
+	cursor: text;
+	transition-duration: .2s;	
+}
+.form form input:focus ~ label {
+	top: 3px;
+	font-size: 10px;
+	transition-duration: .2s;
+}
+.form form input:valid ~ label{
+	top: 3px;
+	font-size: 10px;
+	transition-duration: .2s;	
+}
+#login{
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #3897f0;
+	border-style: none;
+	width: 79%;
+	height: 30px;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+	border-radius: 2px;
+	margin-top: 5px;
+	font-weight: bold;
+
+}
+@media (max-width: 767px){
+	.login{
+		margin:2.5% auto 2.5% auto;
+		width: 95%;
+		height: auto;
+		background-color: transparent;
+		border-color: transparent;
+	}
+	.form form input{
+		width: 100%;
+	}
+	.inputGroup label{
+		left: 1%;
+	}
+	#login{
+		width: 100%;
+	}
+}
